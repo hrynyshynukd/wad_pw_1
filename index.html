@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alert Banner</title>
+
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<main class="page">
+
+    <article class="alert-banner" aria-labelledby="alert-title">
+
+        <div class="notification">
+
+            <div class="icon" aria-hidden="true">
+                <img
+                    class="warning-icon"
+                    src="./icon.svg"
+                    alt=""
+                >
+            </div>
+
+            <div class="text">
+
+                <h1 class="title" id="alert-title">
+                    Are you sure you want to deactivate?
+                </h1>
+
+                <p class="paragraph">
+                    Deactivating is permanent and your account will
+                    automatically be deleted after 30 days if you do
+                    not log in again.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <button
+                type="button"
+                class="button button-reject"
+                aria-label="Reject account deactivation"
+            >
+                <span class="label">Reject</span>
+            </button>
+
+            <button
+                type="button"
+                class="button button-accept"
+                aria-label="Accept account deactivation"
+            >
+                <span class="label">Accept</span>
+            </button>
+
+        </div>
+
+    </article>
+
+</main>
+
+<script src="./script.js"></script>
+
+</body>
+</html>

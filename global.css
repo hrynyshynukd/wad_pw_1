@@ -1,0 +1,46 @@
+:root {
+    --bg: #ffffff;
+
+    --surface: #ebecf5;
+    --text: #283349;
+    --border: #283349;
+
+    --warning-bg: #fbe8a4;
+    --warning-icon: #e5a34a;
+
+    --accent: #6c3cff;
+
+    --button-hover: #151E2E;
+    --button-active: #0D131D;
+
+    --reject-hover: #D3D5EE;
+    --reject-active: #ADB1D5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+
+    background-color: var(--bg);
+    color: var(--text);
+
+    line-height: normal;
+}
+
+button {
+    font: inherit;
+}
+
+button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}

@@ -1,0 +1,234 @@
+.page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 24px;
+}
+
+.alert-banner {
+    width: 100%;
+    max-width: 764px;
+
+    position: relative;
+
+    border-radius: 16px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 32px;
+    gap: 40px;
+
+    text-align: left;
+    font-size: 24px;
+    color: var(--text);
+}
+
+.notification {
+    align-self: stretch;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 24px;
+}
+
+.icon {
+    height: 56px;
+    width: 56px;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+    background-color: var(--warning-bg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px;
+}
+
+.warning-icon {
+    width: 24px;
+    height: 24px;
+
+    color: var(--warning-icon);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.title {
+    margin: 0;
+
+    position: relative;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.paragraph {
+    width: 385px;
+    max-width: 100%;
+
+    margin: 0;
+
+    position: relative;
+
+    font-size: 16px;
+    line-height: 140%;
+
+    /*
+     * 0.56 було у Figma,
+     * але воно не проходить WCAG AA.
+     * 0.72 зберігає приглушений вигляд
+     * і покращує контрастність.
+     */
+    opacity: 0.72;
+}
+
+.buttons {
+    align-self: stretch;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 16px;
+
+    font-size: 16px;
+}
+
+.button {
+    height: 48px;
+    width: 280px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 20px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        transform 0.1s ease;
+}
+
+.button .label {
+    position: relative;
+}
+
+.button-reject {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.button-accept {
+    background-color: var(--text);
+    border: 1px solid var(--text);
+    color: var(--surface);
+}
+
+/* -------------------- */
+/* Hover                */
+/* -------------------- */
+
+.button-reject:hover {
+    background-color: var(--reject-hover);
+}
+
+.button-accept:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover);
+}
+
+/* -------------------- */
+/* Active / Pressed     */
+/* -------------------- */
+
+.button-reject:active {
+    background-color: var(--reject-active);
+}
+
+.button-accept:active {
+    background-color: var(--button-active);
+    border-color: var(--button-active);
+}
+
+/* -------------------- */
+/* Responsive           */
+/* -------------------- */
+
+@media (max-width: 700px) {
+
+    .page {
+        padding: 24px 16px;
+    }
+
+    .alert-banner {
+        padding: 24px;
+        gap: 32px;
+    }
+
+    .notification {
+        gap: 16px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .paragraph {
+        width: auto;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .alert-banner {
+        padding: 20px;
+    }
+
+    .notification {
+        flex-direction: column;
+    }
+
+    .icon {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
