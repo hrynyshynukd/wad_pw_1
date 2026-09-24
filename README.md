@@ -4,6 +4,8 @@
 
 Тема: Проєктування інтерактивного UI-компонента у Figma, семантична реалізація та валідація доступності (a11y)
 
+<img width="1148" height="618" alt="image" src="https://github.com/user-attachments/assets/365d5f37-dea9-42b0-88fd-13120f261da5" />
+
 <img width="709" height="860" alt="Знімок екрана 2026-09-24 222635" src="https://github.com/user-attachments/assets/d62dbd3c-7d30-471d-8ab6-c0ad585c3f14" />
 
 <img width="856" height="925" alt="Знімок екрана 2026-09-24 222747" src="https://github.com/user-attachments/assets/b9573749-4ced-4a29-9e85-853aa35cb158" />
